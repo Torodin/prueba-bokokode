@@ -1,0 +1,54 @@
+.image_container_reduced {
+    position: relative;
+    text-align: center;
+    width: 100px;
+    height: 130px;
+}
+
+.image_container {
+    position: relative;
+    text-align: center;
+    width: 280px;
+    height: 390px;
+}
+
+@media only screen and (max-width: 780px) {
+    .image_container {
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        font-size: 3vw;
+        line-height: 1.5rem;
+    }
+
+    .reduced {
+        font-size: 1.3vw;
+        line-height: 0.8rem;
+    }
+}
+
+.image {
+    position: relative !important;
+}
+
+.reduced {
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.button {
+    visibility: hidden;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+}
+
+.container:hover .button,
+.reduced:hover .button {
+    visibility: visible;
+}
